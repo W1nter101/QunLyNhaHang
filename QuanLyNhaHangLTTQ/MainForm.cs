@@ -52,6 +52,7 @@ namespace QuanLyNhaHangLTTQ
         }
         void loadTable()
         {
+            flowLayoutPanelTable.Controls.Clear();
             List<Table> tableList = TableDAO.Instance.LoadTableList();
             foreach(Table table in tableList ) { 
                 Button btn = new Button() {Width = TableDAO.width,Height = TableDAO.width};
@@ -59,8 +60,15 @@ namespace QuanLyNhaHangLTTQ
                 btn.Click += Btn_Click;
                 //lay table id
                 btn.Tag = table;
-                if (table.Status == "trống") { btn.BackColor = Color.LightCyan; }
-                else { btn.BackColor = Color.Red; }
+                switch(table.Status)
+                {
+                    case "Có người":
+                        btn.BackColor = Color.LightCyan;
+                        break;
+                    default:
+                        btn.BackColor = Color.LightCoral;
+                        break;
+                }          
                 flowLayoutPanelTable.Controls.Add(btn);
             }
         }
@@ -80,6 +88,7 @@ namespace QuanLyNhaHangLTTQ
             }
             CultureInfo culture = new CultureInfo("vi-vn");
             tongTientxtbox.Text = totalPrice.ToString("c",culture);
+            
         }
         private void Btn_Click(object sender, EventArgs e)
         {
@@ -120,6 +129,22 @@ namespace QuanLyNhaHangLTTQ
                 BillInforDAO.Instace.InsertBillInfo(idBill, foodID, count);
             }
             showBill(table.Id);
+            loadTable();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Table table = listViewDatMon.Tag as Table;
+            int idBill = BillDAO.Instance.getUnCheckBillIDbyTableID(table.Id);
+            if(idBill != -1) 
+            {
+                if (MessageBox.Show("Bạn muốn thanh toán hóa đơn bàn " + table.Name,"Thông Báo",MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    BillDAO.Instance.checkOut(idBill);
+                    showBill(table.Id);
+                    loadTable();
+                }
+            }
         }
     }
 }

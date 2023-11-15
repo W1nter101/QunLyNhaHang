@@ -30,6 +30,11 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
             }
             return -1; 
         }
+        public void checkOut(int id)
+        {
+            string query = "update dbo.bill set status = 1 where id = " + id;
+            DataProvider.Instance.ExcuteNonQuery(query);
+        }
         public void InsertBill(int id)
         {
             DataProvider.Instance.ExcuteQuery("exec InsertBill @idTable ", new object[]{id});
