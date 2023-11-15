@@ -23,7 +23,7 @@ namespace QuanLyNhaHangLTTQ.Data_Tranfer_object
         public Food(DataRow row)
         {
             this.iD = (int)row["iD"];
-            this.name = (string)row["name"];
+            this.name = row["name"].ToString();
             this.categoryID = (int)row["idCategory"];
             this.price = (float)Convert.ToDouble(row["price"].ToString());
         }

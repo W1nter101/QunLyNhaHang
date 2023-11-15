@@ -17,15 +17,20 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
             private set { BillInforDAO.instace = value; }
         }
         private BillInforDAO() { }
-        public List<BillInfor> getListBillInfor(int id)
+        public List<BillInfor> getListBillInfor(int id) //id cua bill => bill info
         {
             List<BillInfor> listBillInfor = new List<BillInfor>();
-            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM ddbo.billInfor where billID = " + id);
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM dbo.billInfor where idBill = " + id);
             foreach(DataRow item in data.Rows) {
                 BillInfor infor = new BillInfor(item);
                 listBillInfor.Add(infor);
             }
             return listBillInfor;
+        }
+        public void InsertBillInfo(int idBill,int idFood,int count)
+        {
+            DataProvider.Instance.ExcuteQuery("exec InsertBillInfo @idBill , @idFood , @count ", new object[] { idBill, idFood, count });
+
         }
     }
 }

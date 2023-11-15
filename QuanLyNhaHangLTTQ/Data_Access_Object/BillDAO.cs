@@ -14,7 +14,7 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
 
         internal static BillDAO Instance 
         {
-            get { if(instance == null) instance = new BillDAO(); return BillDAO.Instance; }
+            get { if(instance == null) instance = new BillDAO(); return BillDAO.instance; }
             private set { BillDAO.instance = value; } 
         }
         private BillDAO() { }
@@ -22,13 +22,28 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
         public int getUnCheckBillIDbyTableID(int id)
         {
             //  return (int)DataProvider.Instance.ExcuteScalar("select * from dbo.bill where  id = '" +id+ "' ");
-            DataTable data = DataProvider.Instance.ExcuteQuery("Select * from from dbo.bill where id table = '"+id+"' and  status = 0");             
+            DataTable data = DataProvider.Instance.ExcuteQuery("Select * from dbo.bill where idTable = "+ id +" and status = 0");             
             if(data.Rows.Count > 0)
             {
                 Bill bill = new Bill(data.Rows[0]);
                 return bill.Id;
             }
             return -1; 
+        }
+        public void InsertBill(int id)
+        {
+            DataProvider.Instance.ExcuteQuery("exec InsertBill @idTable ", new object[]{id});
+        }
+        public int getMaxIdBill()
+        {
+            try
+            {
+                return (int)DataProvider.Instance.ExcuteScalar("select MAX(id) from dbo.bill ");
+            }
+            catch
+            {
+                return 1;
+            }
         }
     }
 }

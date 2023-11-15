@@ -9,20 +9,20 @@ namespace QuanLyNhaHangLTTQ.Data_Tranfer_object
 {
     public class Bill
     {
-        public Bill(int id,DateTime ?dayCheckin, DateTime ?daycheckout,int status) 
+        public Bill(int id,DateTime ?dateCheckin, DateTime ?datecheckout,int status) 
         {
             this.id = id;
             this.status = status;
-            this.dateCheckIn = dateCheckIn;
-            this.dateCheckOut = dateCheckOut;
+            this.DateCheckIn = dateCheckin;
+            this.DateCheckOut = datecheckout;
         }
         public Bill(DataRow row) 
         {
             this.id = (int)row["ID"];
             this.dateCheckIn = (DateTime)row["dateCheckin"];
-            var checkOutDateTemp = row["dateCheckOut"];
+            var checkOutDateTemp = row["datecheckout"];
             if(checkOutDateTemp.ToString() != "")       
-                this.dateCheckOut = (DateTime)row["dateCheckOut"];
+                this.dateCheckOut = (DateTime)row["datecheckout"];
             this.status = (int)row["status"];
         }
         private int status;

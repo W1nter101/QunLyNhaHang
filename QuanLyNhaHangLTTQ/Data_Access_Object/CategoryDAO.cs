@@ -19,8 +19,8 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
         private CategoryDAO() { }
         public List<Category> GetListCategory()
         {
-            List<Category> list = new List<Category>();
-            string query = "select * from dbo.foodCategory ";
+            List<Category> list = new List<Category>(); 
+            string query = "select * from foodCategory ";
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow item in data.Rows)
             {

@@ -71,7 +71,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(477, 443);
+            this.panel1.Size = new System.Drawing.Size(477, 555);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanelTable
@@ -79,7 +79,7 @@
             this.flowLayoutPanelTable.AutoScroll = true;
             this.flowLayoutPanelTable.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelTable.Name = "flowLayoutPanelTable";
-            this.flowLayoutPanelTable.Size = new System.Drawing.Size(477, 426);
+            this.flowLayoutPanelTable.Size = new System.Drawing.Size(478, 426);
             this.flowLayoutPanelTable.TabIndex = 0;
             // 
             // menuStrip1
@@ -89,7 +89,7 @@
             this.thôngTinTàiKhoảnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(950, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1071, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,16 +130,16 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(477, 24);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(312, 443);
+            this.panel2.Size = new System.Drawing.Size(312, 555);
             this.panel2.TabIndex = 2;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.listViewDatMon);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 75);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 98);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(312, 368);
+            this.panel5.Size = new System.Drawing.Size(382, 457);
             this.panel5.TabIndex = 1;
             // 
             // listViewDatMon
@@ -151,9 +151,9 @@
             this.columnHeader4});
             this.listViewDatMon.GridLines = true;
             this.listViewDatMon.HideSelection = false;
-            this.listViewDatMon.Location = new System.Drawing.Point(0, 0);
+            this.listViewDatMon.Location = new System.Drawing.Point(3, 9);
             this.listViewDatMon.Name = "listViewDatMon";
-            this.listViewDatMon.Size = new System.Drawing.Size(312, 351);
+            this.listViewDatMon.Size = new System.Drawing.Size(306, 445);
             this.listViewDatMon.TabIndex = 0;
             this.listViewDatMon.UseCompatibleStateImageBehavior = false;
             this.listViewDatMon.View = System.Windows.Forms.View.Details;
@@ -183,12 +183,17 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(312, 75);
+            this.panel4.Size = new System.Drawing.Size(312, 98);
             this.panel4.TabIndex = 0;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(262, 29);
+            this.numericUpDown1.Location = new System.Drawing.Point(250, 69);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            -2147483648});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(47, 20);
             this.numericUpDown1.TabIndex = 3;
@@ -200,19 +205,20 @@
             // 
             // FoodOrderBtn
             // 
-            this.FoodOrderBtn.Location = new System.Drawing.Point(180, 15);
+            this.FoodOrderBtn.Location = new System.Drawing.Point(234, 15);
             this.FoodOrderBtn.Name = "FoodOrderBtn";
             this.FoodOrderBtn.Size = new System.Drawing.Size(75, 48);
             this.FoodOrderBtn.TabIndex = 2;
             this.FoodOrderBtn.Text = "Đặt Món";
             this.FoodOrderBtn.UseVisualStyleBackColor = true;
+            this.FoodOrderBtn.Click += new System.EventHandler(this.FoodOrderBtn_Click);
             // 
             // FoodCbb
             // 
             this.FoodCbb.FormattingEnabled = true;
             this.FoodCbb.Location = new System.Drawing.Point(7, 42);
             this.FoodCbb.Name = "FoodCbb";
-            this.FoodCbb.Size = new System.Drawing.Size(167, 21);
+            this.FoodCbb.Size = new System.Drawing.Size(204, 21);
             this.FoodCbb.TabIndex = 1;
             // 
             // categoryCbb
@@ -220,7 +226,7 @@
             this.categoryCbb.FormattingEnabled = true;
             this.categoryCbb.Location = new System.Drawing.Point(7, 15);
             this.categoryCbb.Name = "categoryCbb";
-            this.categoryCbb.Size = new System.Drawing.Size(167, 21);
+            this.categoryCbb.Size = new System.Drawing.Size(204, 21);
             this.categoryCbb.TabIndex = 0;
             this.categoryCbb.SelectedIndexChanged += new System.EventHandler(this.categoryCbb_SelectedIndexChanged);
             // 
@@ -233,44 +239,48 @@
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.comboBox3);
             this.panel3.Controls.Add(this.button2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(789, 24);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(865, 24);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(161, 443);
+            this.panel3.Size = new System.Drawing.Size(206, 555);
             this.panel3.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 370);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(9, 388);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(79, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Tổng Tiền";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 301);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(9, 321);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(72, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Giảm giá";
             // 
             // tongTientxtbox
             // 
-            this.tongTientxtbox.Location = new System.Drawing.Point(31, 386);
+            this.tongTientxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tongTientxtbox.Location = new System.Drawing.Point(59, 421);
             this.tongTientxtbox.Name = "tongTientxtbox";
             this.tongTientxtbox.ReadOnly = true;
-            this.tongTientxtbox.Size = new System.Drawing.Size(100, 20);
+            this.tongTientxtbox.Size = new System.Drawing.Size(127, 26);
             this.tongTientxtbox.TabIndex = 5;
             this.tongTientxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(31, 319);
+            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.numericUpDown2.Location = new System.Drawing.Point(59, 344);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown2.Size = new System.Drawing.Size(100, 26);
             this.numericUpDown2.TabIndex = 4;
             this.numericUpDown2.Value = new decimal(new int[] {
             1,
@@ -280,7 +290,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(6, 226);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button3.Location = new System.Drawing.Point(34, 226);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(152, 54);
             this.button3.TabIndex = 2;
@@ -289,15 +300,17 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(6, 165);
+            this.comboBox3.Location = new System.Drawing.Point(34, 153);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(152, 21);
+            this.comboBox3.Size = new System.Drawing.Size(152, 28);
             this.comboBox3.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(6, 105);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.Location = new System.Drawing.Point(34, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 54);
             this.button2.TabIndex = 0;
@@ -308,7 +321,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 467);
+            this.ClientSize = new System.Drawing.Size(1071, 579);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

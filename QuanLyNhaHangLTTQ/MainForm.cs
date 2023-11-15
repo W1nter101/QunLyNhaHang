@@ -19,6 +19,7 @@ namespace QuanLyNhaHangLTTQ
         {
             InitializeComponent();
             loadTable();
+            LoadCategory();
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -39,13 +40,15 @@ namespace QuanLyNhaHangLTTQ
         }
         void LoadCategory()
         {
-            List<Category> list = CategoryDAO.Instance.GetListCategory();
-            categoryCbb.DataSource = list;
+            List<Category> listCategory = CategoryDAO.Instance.GetListCategory();
+            categoryCbb.DataSource = listCategory;
+            categoryCbb.DisplayMember = "Name";
         }
         void LoadFoodListByCategoryID(int id)
         {
             List<Food> listFood = FoodDAO.Instance.GetFoodByCategoryID(id);
             FoodCbb.DataSource = listFood;
+            FoodCbb.DisplayMember="Name";
         }
         void loadTable()
         {
@@ -81,6 +84,7 @@ namespace QuanLyNhaHangLTTQ
         private void Btn_Click(object sender, EventArgs e)
         {
             int tableId = ((sender as Button).Tag as Table).Id;
+            listViewDatMon.Tag = (sender as Button).Tag;
             showBill(tableId);
 
         }
@@ -96,6 +100,26 @@ namespace QuanLyNhaHangLTTQ
             Category selected = combo.SelectedItem as Category;
             id = selected.ID;
             LoadFoodListByCategoryID(id);
+        }
+
+        private void FoodOrderBtn_Click(object sender, EventArgs e)
+        {
+            //bil chua ton tai, tao bill moi, lay input tu 2 cbb 
+            Table table = listViewDatMon.Tag as Table;
+            int idBill = BillDAO.Instance.getUnCheckBillIDbyTableID(table.Id);
+            int foodID = (FoodCbb.SelectedItem as Food).ID;
+            int count = (int)numericUpDown1.Value;
+            
+            if(idBill == -1) 
+            {
+                BillDAO.Instance.InsertBill(table.Id);
+                BillInforDAO.Instace.InsertBillInfo(BillDAO.Instance.getMaxIdBill(), foodID, count);
+            } //bill da ton tai
+            else
+            {
+                BillInforDAO.Instace.InsertBillInfo(idBill, foodID, count);
+            }
+            showBill(table.Id);
         }
     }
 }

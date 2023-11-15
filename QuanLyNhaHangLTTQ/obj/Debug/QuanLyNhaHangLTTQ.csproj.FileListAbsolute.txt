@@ -11,3 +11,16 @@ C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLy
 C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.MainForm.resources
 C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Account_Infor.resources
 C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.FormAdminQuanLy.resources
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.exe.config
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.exe
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.pdb
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Account_Infor.resources
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Form1.resources
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.FormAdminQuanLy.resources
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.MainForm.resources
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Properties.Resources.resources
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.exe
+C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.pdb

@@ -18,7 +18,7 @@ namespace QuanLyNhaHangLTTQ.Data_Tranfer_object
         public Category(DataRow dr)
         {
             this.ID = (int)dr["id"];
-            this.name = (string)dr["name"];
+            this.name = dr["name"].ToString();
         }
         
         private int iD;
