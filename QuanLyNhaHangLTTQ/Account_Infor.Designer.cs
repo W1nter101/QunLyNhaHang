@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtAcoountNameInfor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TxtAccountInfor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtPassInfor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.TxtNewPassInfor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.UpdateInforBtn = new System.Windows.Forms.Button();
             this.QuitUpdateBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtAcoountNameInfor = new System.Windows.Forms.TextBox();
-            this.TxtAccountInfor = new System.Windows.Forms.TextBox();
-            this.txtPassInfor = new System.Windows.Forms.TextBox();
-            this.TxtNewPassInfor = new System.Windows.Forms.TextBox();
             this.txtNhapLai = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -60,6 +60,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(594, 66);
             this.panel1.TabIndex = 0;
+            // 
+            // txtAcoountNameInfor
+            // 
+            this.txtAcoountNameInfor.Location = new System.Drawing.Point(233, 21);
+            this.txtAcoountNameInfor.Name = "txtAcoountNameInfor";
+            this.txtAcoountNameInfor.Size = new System.Drawing.Size(249, 20);
+            this.txtAcoountNameInfor.TabIndex = 2;
             // 
             // label1
             // 
@@ -80,6 +87,13 @@
             this.panel2.Size = new System.Drawing.Size(594, 66);
             this.panel2.TabIndex = 2;
             // 
+            // TxtAccountInfor
+            // 
+            this.TxtAccountInfor.Location = new System.Drawing.Point(233, 18);
+            this.TxtAccountInfor.Name = "TxtAccountInfor";
+            this.TxtAccountInfor.Size = new System.Drawing.Size(249, 20);
+            this.TxtAccountInfor.TabIndex = 3;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -99,6 +113,14 @@
             this.panel3.Size = new System.Drawing.Size(594, 66);
             this.panel3.TabIndex = 2;
             // 
+            // txtPassInfor
+            // 
+            this.txtPassInfor.Location = new System.Drawing.Point(233, 21);
+            this.txtPassInfor.Name = "txtPassInfor";
+            this.txtPassInfor.PasswordChar = '*';
+            this.txtPassInfor.Size = new System.Drawing.Size(249, 20);
+            this.txtPassInfor.TabIndex = 3;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -117,6 +139,14 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(594, 66);
             this.panel4.TabIndex = 2;
+            // 
+            // TxtNewPassInfor
+            // 
+            this.TxtNewPassInfor.Location = new System.Drawing.Point(233, 18);
+            this.TxtNewPassInfor.Name = "TxtNewPassInfor";
+            this.TxtNewPassInfor.PasswordChar = '*';
+            this.TxtNewPassInfor.Size = new System.Drawing.Size(249, 20);
+            this.TxtNewPassInfor.TabIndex = 3;
             // 
             // label4
             // 
@@ -157,6 +187,14 @@
             this.panel5.Size = new System.Drawing.Size(594, 66);
             this.panel5.TabIndex = 5;
             // 
+            // txtNhapLai
+            // 
+            this.txtNhapLai.Location = new System.Drawing.Point(233, 21);
+            this.txtNhapLai.Name = "txtNhapLai";
+            this.txtNhapLai.PasswordChar = '*';
+            this.txtNhapLai.Size = new System.Drawing.Size(249, 20);
+            this.txtNhapLai.TabIndex = 3;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -166,41 +204,6 @@
             this.label5.Size = new System.Drawing.Size(117, 18);
             this.label5.TabIndex = 0;
             this.label5.Text = "Mật Khẩu Mới:";
-            // 
-            // txtAcoountNameInfor
-            // 
-            this.txtAcoountNameInfor.Location = new System.Drawing.Point(233, 21);
-            this.txtAcoountNameInfor.Name = "txtAcoountNameInfor";
-            this.txtAcoountNameInfor.Size = new System.Drawing.Size(100, 20);
-            this.txtAcoountNameInfor.TabIndex = 2;
-            // 
-            // TxtAccountInfor
-            // 
-            this.TxtAccountInfor.Location = new System.Drawing.Point(233, 18);
-            this.TxtAccountInfor.Name = "TxtAccountInfor";
-            this.TxtAccountInfor.Size = new System.Drawing.Size(100, 20);
-            this.TxtAccountInfor.TabIndex = 3;
-            // 
-            // txtPassInfor
-            // 
-            this.txtPassInfor.Location = new System.Drawing.Point(233, 21);
-            this.txtPassInfor.Name = "txtPassInfor";
-            this.txtPassInfor.Size = new System.Drawing.Size(100, 20);
-            this.txtPassInfor.TabIndex = 3;
-            // 
-            // TxtNewPassInfor
-            // 
-            this.TxtNewPassInfor.Location = new System.Drawing.Point(233, 18);
-            this.TxtNewPassInfor.Name = "TxtNewPassInfor";
-            this.TxtNewPassInfor.Size = new System.Drawing.Size(100, 20);
-            this.TxtNewPassInfor.TabIndex = 3;
-            // 
-            // txtNhapLai
-            // 
-            this.txtNhapLai.Location = new System.Drawing.Point(233, 21);
-            this.txtNhapLai.Name = "txtNhapLai";
-            this.txtNhapLai.Size = new System.Drawing.Size(100, 20);
-            this.txtNhapLai.TabIndex = 3;
             // 
             // Account_Infor
             // 

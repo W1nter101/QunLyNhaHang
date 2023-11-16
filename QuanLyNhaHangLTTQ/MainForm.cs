@@ -34,7 +34,7 @@ namespace QuanLyNhaHangLTTQ
         public MainForm(Account acc)
         {
             InitializeComponent();
-            this.LoginAccount = acc;
+            this.LoginAccount1 = acc;
             loadTable();
             LoadCategory();
         }
