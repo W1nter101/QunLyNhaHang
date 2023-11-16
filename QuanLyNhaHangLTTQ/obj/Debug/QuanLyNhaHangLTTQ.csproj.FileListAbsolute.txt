@@ -24,16 +24,16 @@ C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTT
 C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.exe
 C:\Users\Admin\source\repos\QuanLyNhaHangLTTQ\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.pdb
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.exe.config
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.exe
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.pdb
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.AssemblyReference.cache
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Account_Infor.resources
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Form1.resources
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.FormAdminQuanLy.resources
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.MainForm.resources
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Properties.Resources.resources
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.GenerateResource.cache
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.CoreCompileInputs.cache
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.exe
-F:\trucquan\QunLyNhaHang_LTTQ\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.pdb
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.exe.config
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.exe
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\bin\Debug\QuanLyNhaHangLTTQ.pdb
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.AssemblyReference.cache
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Account_Infor.resources
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Form1.resources
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.FormAdminQuanLy.resources
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.MainForm.resources
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.Properties.Resources.resources
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.GenerateResource.cache
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.csproj.CoreCompileInputs.cache
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.exe
+C:\Users\Anh Minh\Downloads\QunLyNhaHang_LTTQ-main\QuanLyNhaHangLTTQ\obj\Debug\QuanLyNhaHangLTTQ.pdb

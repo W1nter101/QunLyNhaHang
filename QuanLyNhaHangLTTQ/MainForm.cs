@@ -15,36 +15,11 @@ namespace QuanLyNhaHangLTTQ
 {
     public partial class MainForm : Form
     {
-        private Account LoginAccount;
-
-        public Account LoginAccount1 
+        public MainForm()
         {
-            get
-            {
-                return LoginAccount;
-            }
-            set
-            {
-                LoginAccount = value;
-                ChangeAccount(LoginAccount.Type);
-            }
-        
-        }
-
-        public MainForm(Account acc)
-        {
-
             InitializeComponent();
-            this.LoginAccount1 = acc;
             loadTable();
             LoadCategory();
-            
-        }
-
-        void ChangeAccount(int type)
-        {
-            adminToolStripMenuItem.Enabled = type == 1;
-            thôngTinTàiKhoảnToolStripMenuItem.Text  += "("+LoginAccount1.DisplayName+")";
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,7 +29,7 @@ namespace QuanLyNhaHangLTTQ
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Account_Infor f = new Account_Infor(LoginAccount);
+            Account_Infor f = new Account_Infor();
             f.ShowDialog();
         }
 
@@ -159,26 +134,17 @@ namespace QuanLyNhaHangLTTQ
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Table table = listViewDatMon.Tag as Table;  
+            Table table = listViewDatMon.Tag as Table;
             int idBill = BillDAO.Instance.getUnCheckBillIDbyTableID(table.Id);
-            int discount = (int)numericUpDownDisCount.Value;
-
-            double totalPrice = Convert.ToDouble(tongTientxtbox.Text.Split(',')[0]);
-            double finalTotalPrice = totalPrice - (totalPrice / 100) * discount;
             if(idBill != -1) 
             {
-                if (MessageBox.Show(String.Format("Bạn muốn thanh toán hóa đơn bàn {0}\n Tổng tiền = {1}",table.Name,finalTotalPrice),"Thông Báo",MessageBoxButtons.OKCancel) == DialogResult.OK)
+                if (MessageBox.Show("Bạn muốn thanh toán hóa đơn bàn " + table.Name,"Thông Báo",MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-                    BillDAO.Instance.checkOut(idBill,discount,(float)totalPrice);
+                    BillDAO.Instance.checkOut(idBill);
                     showBill(table.Id);
                     loadTable();
                 }
             }
-        }
-
-        private void flowLayoutPanelTable_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

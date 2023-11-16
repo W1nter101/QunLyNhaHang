@@ -60,7 +60,6 @@
     <Compile Include="Data_Access_Object\FoodDAO.cs" />
     <Compile Include="Data_Access_Object\MenuDAO.cs" />
     <Compile Include="Data_Access_Object\TableDAO.cs" />
-    <Compile Include="Data_Tranfer_object\Account.cs" />
     <Compile Include="Data_Tranfer_object\Bill.cs" />
     <Compile Include="Data_Tranfer_object\BillInfor.cs" />
     <Compile Include="Data_Tranfer_object\Category.cs" />

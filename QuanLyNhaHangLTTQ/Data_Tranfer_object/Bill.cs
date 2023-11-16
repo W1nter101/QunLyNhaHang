@@ -9,13 +9,12 @@ namespace QuanLyNhaHangLTTQ.Data_Tranfer_object
 {
     public class Bill
     {
-        public Bill(int id,DateTime ?dateCheckin, DateTime ?datecheckout,int status,int discount = 0) 
+        public Bill(int id,DateTime ?dateCheckin, DateTime ?datecheckout,int status) 
         {
             this.id = id;
             this.status = status;
             this.DateCheckIn = dateCheckin;
             this.DateCheckOut = datecheckout;
-            this.Discount = discount;
         }
         public Bill(DataRow row) 
         {
@@ -25,11 +24,7 @@ namespace QuanLyNhaHangLTTQ.Data_Tranfer_object
             if(checkOutDateTemp.ToString() != "")       
                 this.dateCheckOut = (DateTime)row["datecheckout"];
             this.status = (int)row["status"];
-            this.Discount = (int)row["discount"];
         }
-
-        private int discount;
-
         private int status;
         private DateTime? dateCheckIn; 
         private DateTime? dateCheckOut;
@@ -39,6 +34,5 @@ namespace QuanLyNhaHangLTTQ.Data_Tranfer_object
         public DateTime? DateCheckIn { get => dateCheckIn; set => dateCheckIn = value; }
         public DateTime? DateCheckOut { get => dateCheckOut; set => dateCheckOut = value; }
         public int Status { get => status; set => status = value; }
-        public int Discount { get => discount; set => discount = value; }
     }
 }
