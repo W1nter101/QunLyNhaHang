@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtAcoountNameInfor = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TxtAccountInfor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,6 +57,14 @@
             this.panel1.Size = new System.Drawing.Size(594, 66);
             this.panel1.TabIndex = 0;
             // 
+            // txtAcoountNameInfor
+            // 
+            this.txtAcoountNameInfor.Location = new System.Drawing.Point(200, 21);
+            this.txtAcoountNameInfor.Name = "txtAcoountNameInfor";
+            this.txtAcoountNameInfor.ReadOnly = true;
+            this.txtAcoountNameInfor.Size = new System.Drawing.Size(230, 20);
+            this.txtAcoountNameInfor.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -66,14 +74,6 @@
             this.label1.Size = new System.Drawing.Size(124, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Đăng Nhập";
-            // 
-            // txtAcoountNameInfor
-            // 
-            this.txtAcoountNameInfor.Location = new System.Drawing.Point(200, 21);
-            this.txtAcoountNameInfor.Name = "txtAcoountNameInfor";
-            this.txtAcoountNameInfor.ReadOnly = true;
-            this.txtAcoountNameInfor.Size = new System.Drawing.Size(230, 20);
-            this.txtAcoountNameInfor.TabIndex = 1;
             // 
             // panel2
             // 

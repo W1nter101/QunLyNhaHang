@@ -30,14 +30,18 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
             }
             return -1; 
         }
-        public void checkOut(int id)
+        public void checkOut(int id,int discount,float totalPrice)
         {
-            string query = "update dbo.bill set status = 1 where id = " + id;
+            string query = "update dbo.bill set dateCheckOut = GETDATE(), status = 1, " + "discount = " + discount + ", totalPrice = " + totalPrice + " where id = " + id;
             DataProvider.Instance.ExcuteNonQuery(query);
         }
         public void InsertBill(int id)
         {
             DataProvider.Instance.ExcuteQuery("exec InsertBill @idTable ", new object[]{id});
+        }
+        public DataTable GetBillListByDate(DateTime checkIn,DateTime checkOut)
+        {
+          return DataProvider.Instance.ExcuteQuery("exec usp_getListBillByDate @check_in , @check_out ", new object[]{checkIn,checkOut});
         }
         public int getMaxIdBill()
         {
