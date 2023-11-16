@@ -240,9 +240,9 @@
             this.panel3.Controls.Add(this.comboBox3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(865, 24);
+            this.panel3.Location = new System.Drawing.Point(840, 24);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(206, 555);
+            this.panel3.Size = new System.Drawing.Size(231, 555);
             this.panel3.TabIndex = 3;
             // 
             // label2

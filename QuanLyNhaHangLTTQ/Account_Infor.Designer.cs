@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtAcoountNameInfor = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TxtAccountInfor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,10 +42,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.UpdateInforBtn = new System.Windows.Forms.Button();
             this.QuitUpdateBtn = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtNhapLai = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,6 +61,13 @@
             this.panel1.Size = new System.Drawing.Size(594, 66);
             this.panel1.TabIndex = 0;
             // 
+            // txtAcoountNameInfor
+            // 
+            this.txtAcoountNameInfor.Location = new System.Drawing.Point(233, 21);
+            this.txtAcoountNameInfor.Name = "txtAcoountNameInfor";
+            this.txtAcoountNameInfor.Size = new System.Drawing.Size(249, 20);
+            this.txtAcoountNameInfor.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -66,14 +77,6 @@
             this.label1.Size = new System.Drawing.Size(124, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Đăng Nhập";
-            // 
-            // txtAcoountNameInfor
-            // 
-            this.txtAcoountNameInfor.Location = new System.Drawing.Point(200, 21);
-            this.txtAcoountNameInfor.Name = "txtAcoountNameInfor";
-            this.txtAcoountNameInfor.ReadOnly = true;
-            this.txtAcoountNameInfor.Size = new System.Drawing.Size(230, 20);
-            this.txtAcoountNameInfor.TabIndex = 1;
             // 
             // panel2
             // 
@@ -86,11 +89,10 @@
             // 
             // TxtAccountInfor
             // 
-            this.TxtAccountInfor.Location = new System.Drawing.Point(200, 21);
+            this.TxtAccountInfor.Location = new System.Drawing.Point(233, 18);
             this.TxtAccountInfor.Name = "TxtAccountInfor";
-            this.TxtAccountInfor.ReadOnly = true;
-            this.TxtAccountInfor.Size = new System.Drawing.Size(230, 20);
-            this.TxtAccountInfor.TabIndex = 1;
+            this.TxtAccountInfor.Size = new System.Drawing.Size(249, 20);
+            this.TxtAccountInfor.TabIndex = 3;
             // 
             // label2
             // 
@@ -113,11 +115,11 @@
             // 
             // txtPassInfor
             // 
-            this.txtPassInfor.Location = new System.Drawing.Point(200, 21);
+            this.txtPassInfor.Location = new System.Drawing.Point(233, 21);
             this.txtPassInfor.Name = "txtPassInfor";
-            this.txtPassInfor.ReadOnly = true;
-            this.txtPassInfor.Size = new System.Drawing.Size(230, 20);
-            this.txtPassInfor.TabIndex = 1;
+            this.txtPassInfor.PasswordChar = '*';
+            this.txtPassInfor.Size = new System.Drawing.Size(249, 20);
+            this.txtPassInfor.TabIndex = 3;
             // 
             // label3
             // 
@@ -140,11 +142,11 @@
             // 
             // TxtNewPassInfor
             // 
-            this.TxtNewPassInfor.Location = new System.Drawing.Point(200, 21);
+            this.TxtNewPassInfor.Location = new System.Drawing.Point(233, 18);
             this.TxtNewPassInfor.Name = "TxtNewPassInfor";
-            this.TxtNewPassInfor.ReadOnly = true;
-            this.TxtNewPassInfor.Size = new System.Drawing.Size(230, 20);
-            this.TxtNewPassInfor.TabIndex = 1;
+            this.TxtNewPassInfor.PasswordChar = '*';
+            this.TxtNewPassInfor.Size = new System.Drawing.Size(249, 20);
+            this.TxtNewPassInfor.TabIndex = 3;
             // 
             // label4
             // 
@@ -158,16 +160,17 @@
             // 
             // UpdateInforBtn
             // 
-            this.UpdateInforBtn.Location = new System.Drawing.Point(246, 322);
+            this.UpdateInforBtn.Location = new System.Drawing.Point(320, 447);
             this.UpdateInforBtn.Name = "UpdateInforBtn";
             this.UpdateInforBtn.Size = new System.Drawing.Size(124, 41);
             this.UpdateInforBtn.TabIndex = 3;
             this.UpdateInforBtn.Text = "Cập Nhật Thông Tin";
             this.UpdateInforBtn.UseVisualStyleBackColor = true;
+            this.UpdateInforBtn.Click += new System.EventHandler(this.UpdateInforBtn_Click);
             // 
             // QuitUpdateBtn
             // 
-            this.QuitUpdateBtn.Location = new System.Drawing.Point(376, 322);
+            this.QuitUpdateBtn.Location = new System.Drawing.Point(470, 447);
             this.QuitUpdateBtn.Name = "QuitUpdateBtn";
             this.QuitUpdateBtn.Size = new System.Drawing.Size(124, 41);
             this.QuitUpdateBtn.TabIndex = 4;
@@ -175,11 +178,39 @@
             this.QuitUpdateBtn.UseVisualStyleBackColor = true;
             this.QuitUpdateBtn.Click += new System.EventHandler(this.QuitUpdateBtn_Click);
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.txtNhapLai);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Location = new System.Drawing.Point(0, 300);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(594, 66);
+            this.panel5.TabIndex = 5;
+            // 
+            // txtNhapLai
+            // 
+            this.txtNhapLai.Location = new System.Drawing.Point(233, 21);
+            this.txtNhapLai.Name = "txtNhapLai";
+            this.txtNhapLai.PasswordChar = '*';
+            this.txtNhapLai.Size = new System.Drawing.Size(249, 20);
+            this.txtNhapLai.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(29, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(117, 18);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Mật Khẩu Mới:";
+            // 
             // Account_Infor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 393);
+            this.ClientSize = new System.Drawing.Size(611, 547);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.QuitUpdateBtn);
             this.Controls.Add(this.UpdateInforBtn);
             this.Controls.Add(this.panel4);
@@ -196,6 +227,8 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -203,18 +236,21 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtAcoountNameInfor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox TxtAccountInfor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtPassInfor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox TxtNewPassInfor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button UpdateInforBtn;
         private System.Windows.Forms.Button QuitUpdateBtn;
+        private System.Windows.Forms.TextBox txtAcoountNameInfor;
+        private System.Windows.Forms.TextBox TxtAccountInfor;
+        private System.Windows.Forms.TextBox txtPassInfor;
+        private System.Windows.Forms.TextBox TxtNewPassInfor;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtNhapLai;
+        private System.Windows.Forms.Label label5;
     }
 }

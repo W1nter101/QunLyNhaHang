@@ -18,7 +18,7 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
         }
 
         private DataProvider() {}
-        string connectionSQL = "Data Source=ANHHMINH\\SQLEXPRESS09;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
+        string connectionSQL = "Data Source=KHOAAAAAAAA;Initial Catalog=QuanLyNhaHang;Integrated Security=True";
 
         public DataTable ExcuteQuery(string query, object[] parameter =null) //truong hop can chay them procedure
         {
