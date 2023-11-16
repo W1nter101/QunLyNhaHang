@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhaHangLTTQ.Data_Tranfer_object;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -23,6 +24,29 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
             string query = "USP_login @username , @password ";
             DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] {username,password});
             return result.Rows.Count > 0;
+        }
+
+        public DataTable GetListAccount()
+        {
+            return DataProvider.Instance.ExcuteQuery("Select Username, DisplayName, Type from Account");
+        }
+
+
+        public Account GetAccountByUserName(string username)
+        {
+            DataTable data = DataProvider.Instance.ExcuteQuery("Select * from Account where Username =  '"+username+"'");
+            foreach(DataRow row in data.Rows)
+            {
+                return new Account(row);
+            }
+
+            return null;
+        }
+
+        public bool updateAccount(string username, string displayname, string newpass, string pass)
+        {
+            int result = DataProvider.Instance.ExcuteNonQuery("exec USP_UpdateAccount @username , @displayname , @password , @newpassword ", new object[] {username, displayname, pass, newpass});
+            return result > 0;
         }
     }
 }

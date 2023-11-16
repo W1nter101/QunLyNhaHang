@@ -15,11 +15,36 @@ namespace QuanLyNhaHangLTTQ
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private Account LoginAccount;
+
+        public Account LoginAccount1 
         {
+            get
+            {
+                return LoginAccount;
+            }
+            set
+            {
+                LoginAccount = value;
+                ChangeAccount(LoginAccount.Type);
+            }
+        
+        }
+
+        public MainForm(Account acc)
+        {
+
             InitializeComponent();
+            this.LoginAccount1 = acc;
             loadTable();
             LoadCategory();
+            
+        }
+
+        void ChangeAccount(int type)
+        {
+            adminToolStripMenuItem.Enabled = type == 1;
+            thôngTinTàiKhoảnToolStripMenuItem.Text  += "("+LoginAccount1.DisplayName+")";
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,7 +54,7 @@ namespace QuanLyNhaHangLTTQ
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Account_Infor f = new Account_Infor();
+            Account_Infor f = new Account_Infor(LoginAccount);
             f.ShowDialog();
         }
 
@@ -149,6 +174,11 @@ namespace QuanLyNhaHangLTTQ
                     loadTable();
                 }
             }
+        }
+
+        private void flowLayoutPanelTable_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

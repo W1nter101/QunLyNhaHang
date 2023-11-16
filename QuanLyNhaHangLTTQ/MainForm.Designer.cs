@@ -81,6 +81,7 @@
             this.flowLayoutPanelTable.Name = "flowLayoutPanelTable";
             this.flowLayoutPanelTable.Size = new System.Drawing.Size(478, 426);
             this.flowLayoutPanelTable.TabIndex = 0;
+            this.flowLayoutPanelTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelTable_Paint);
             // 
             // menuStrip1
             // 
