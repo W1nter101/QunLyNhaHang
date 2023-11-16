@@ -29,7 +29,11 @@ namespace QuanLyNhaHangLTTQ
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             Account_Infor f = new Account_Infor();
+=======
+            Account_Infor f = new Account_Infor(LoginAccount1);
+>>>>>>> Stashed changes
             f.ShowDialog();
         }
 
