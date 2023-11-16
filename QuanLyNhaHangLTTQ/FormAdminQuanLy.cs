@@ -13,6 +13,12 @@ namespace QuanLyNhaHangLTTQ
 {
     public partial class FormAdminQuanLy : Form
     {
+<<<<<<< Updated upstream
+=======
+        BindingSource foodList = new BindingSource();
+
+        BindingSource accountlist = new BindingSource();
+>>>>>>> Stashed changes
         public FormAdminQuanLy()
         {
             InitializeComponent();
@@ -21,11 +27,53 @@ namespace QuanLyNhaHangLTTQ
         }
         private void tabPageTable_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
 
+=======
+            string connnectionSTR = "Data Source=ANHHMINH\\SQLEXPRESS09;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connnectionSTR);
+            string query = "SELECT * from dbo.Account";
+            connection.Open();
+            SqlCommand command = new SqlCommand(query, connection);
+            DataTable data = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(data);
+            connection.Close();
+            dgvAccount.DataSource = data;
+>>>>>>> Stashed changes
         }
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+<<<<<<< Updated upstream
 
+=======
+            dgvAccount.DataSource = accountlist;
+            dataGridView2.DataSource = foodList;
+            LoadListFood();
+            AddFoodBinding();
+            AddAccountBinding();
+            LoadCategoryIntoCombobox(comboBox1);
+        }
+
+        void AddAccountBinding()
+        {
+            
+        }
+        void AddFoodBinding()
+        {
+            textBox2.DataBindings.Add(new Binding("Text", dataGridView2.DataSource, "name"));
+            txtAcoountNameInfor.DataBindings.Add(new Binding("Text",dataGridView2.DataSource,"id"));
+            numericUpDown1.DataBindings.Add(new Binding("Value",dataGridView2.DataSource,"Price"));
+        }
+        void LoadCategoryIntoCombobox(ComboBox cb)
+        {
+            cb.DataSource = CategoryDAO.Instance.GetListCategory();
+            cb.DisplayMember = "name";
+        }
+        void LoadListFood()
+        {
+            foodList.DataSource = FoodDAO.Instance.GetListFood();
+>>>>>>> Stashed changes
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -45,6 +93,11 @@ namespace QuanLyNhaHangLTTQ
         private void button1_Click(object sender, EventArgs e)
         {
             loadListBillByDate(dateTimePicker1.Value, dateTimePicker2.Value);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

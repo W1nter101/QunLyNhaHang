@@ -103,21 +103,21 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dgvAccount = new System.Windows.Forms.DataGridView();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtDisplayName = new System.Windows.Forms.TextBox();
+            this.comboBoxTaiKhoan = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageDoanhThu.SuspendLayout();
@@ -158,7 +158,7 @@
             this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).BeginInit();
             this.panel19.SuspendLayout();
             this.panel21.SuspendLayout();
             this.SuspendLayout();
@@ -354,7 +354,11 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.Location = new System.Drawing.Point(10, 16);
             this.label5.Name = "label5";
+<<<<<<< Updated upstream
             this.label5.Size = new System.Drawing.Size(71, 16);
+=======
+            this.label5.Size = new System.Drawing.Size(83, 16);
+>>>>>>> Stashed changes
             this.label5.TabIndex = 0;
             this.label5.Text = "Tên Món:";
             // 
@@ -846,7 +850,7 @@
             // panel18
             // 
             this.panel18.Controls.Add(this.panel22);
-            this.panel18.Controls.Add(this.dataGridView5);
+            this.panel18.Controls.Add(this.dgvAccount);
             this.panel18.Location = new System.Drawing.Point(2, 112);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(787, 307);
@@ -865,13 +869,14 @@
             // 
             // panel24
             // 
-            this.panel24.Controls.Add(this.textBox5);
+            this.panel24.Controls.Add(this.comboBoxTaiKhoan);
             this.panel24.Controls.Add(this.label7);
             this.panel24.Location = new System.Drawing.Point(3, 133);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(331, 59);
             this.panel24.TabIndex = 2;
             // 
+<<<<<<< Updated upstream
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(134, 12);
@@ -881,6 +886,8 @@
             this.textBox5.TabIndex = 1;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
+=======
+>>>>>>> Stashed changes
             // label7
             // 
             this.label7.AutoSize = true;
@@ -893,20 +900,12 @@
             // 
             // panel25
             // 
-            this.panel25.Controls.Add(this.textBox6);
+            this.panel25.Controls.Add(this.txtDisplayName);
             this.panel25.Controls.Add(this.label8);
             this.panel25.Location = new System.Drawing.Point(5, 68);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(331, 59);
             this.panel25.TabIndex = 2;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(132, 15);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(183, 20);
-            this.textBox6.TabIndex = 1;
             // 
             // label8
             // 
@@ -920,20 +919,12 @@
             // 
             // panel29
             // 
-            this.panel29.Controls.Add(this.textBox7);
             this.panel29.Controls.Add(this.label11);
+            this.panel29.Controls.Add(this.txtUserName);
             this.panel29.Location = new System.Drawing.Point(3, 3);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(331, 59);
             this.panel29.TabIndex = 1;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(134, 15);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(183, 20);
-            this.textBox7.TabIndex = 1;
             // 
             // label11
             // 
@@ -945,13 +936,13 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Tên Tài Khoản:";
             // 
-            // dataGridView5
+            // dgvAccount
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(4, -4);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(445, 311);
-            this.dataGridView5.TabIndex = 4;
+            this.dgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAccount.Location = new System.Drawing.Point(4, -4);
+            this.dgvAccount.Name = "dgvAccount";
+            this.dgvAccount.Size = new System.Drawing.Size(445, 311);
+            this.dgvAccount.TabIndex = 4;
             // 
             // panel19
             // 
@@ -980,6 +971,7 @@
             this.button11.TabIndex = 6;
             this.button11.Text = "Xem";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button16
             // 
@@ -1007,6 +999,28 @@
             this.button18.TabIndex = 3;
             this.button18.Text = "Thêm";
             this.button18.UseVisualStyleBackColor = true;
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Location = new System.Drawing.Point(134, 19);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(100, 20);
+            this.txtUserName.TabIndex = 3;
+            // 
+            // txtDisplayName
+            // 
+            this.txtDisplayName.Location = new System.Drawing.Point(132, 15);
+            this.txtDisplayName.Name = "txtDisplayName";
+            this.txtDisplayName.Size = new System.Drawing.Size(100, 20);
+            this.txtDisplayName.TabIndex = 4;
+            // 
+            // comboBoxTaiKhoan
+            // 
+            this.comboBoxTaiKhoan.FormattingEnabled = true;
+            this.comboBoxTaiKhoan.Location = new System.Drawing.Point(134, 16);
+            this.comboBoxTaiKhoan.Name = "comboBoxTaiKhoan";
+            this.comboBoxTaiKhoan.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTaiKhoan.TabIndex = 1;
             // 
             // FormAdminQuanLy
             // 
@@ -1070,7 +1084,7 @@
             this.panel25.PerformLayout();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).EndInit();
             this.panel19.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1155,19 +1169,24 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dgvAccount;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+<<<<<<< Updated upstream
+=======
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtDisplayName;
+        private System.Windows.Forms.ComboBox comboBoxTaiKhoan;
+>>>>>>> Stashed changes
     }
 }

@@ -31,5 +31,40 @@ namespace QuanLyNhaHangLTTQ.Data_Access_Object
 
             return list;
         }
+<<<<<<< Updated upstream
+=======
+        public List<Food> GetListFood()
+        {
+            List<Food> list = new List<Food>();
+
+            string query = "select * from Food";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Food food = new Food(item);
+                list.Add(food);
+            }
+
+            return list;
+        }
+        public bool InsertFood(string name,int id, float price)
+        {
+            string query = string.Format("INSERT dbo.Food (name,idCategory, price) VALUES (N'{0}',{1},{2})", name, id, price);
+            int result = DataProvider.Instance.ExcuteNonQuery(query);
+            return result > 0;
+        }
+
+
+
+        
+        
+        
+
+        
+
+        
+>>>>>>> Stashed changes
     }
 }
