@@ -1,4 +1,5 @@
 ﻿using QuanLyNhaHangLTTQ.Data_Access_Object;
+using QuanLyNhaHangLTTQ.Data_Tranfer_object;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,8 +24,10 @@ namespace QuanLyNhaHangLTTQ
             string password = textBoxMatKhau.Text;
             if (login(userName,password))
             {
+                Account loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
+                MainForm form = new MainForm(loginAccount);
                 this.Hide();
-                MainForm form = new MainForm();
+               
                 form.ShowDialog();
                 this.Show();
             }
